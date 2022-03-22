@@ -1,0 +1,46 @@
+body { padding: 0; margin: 0 }
+#unity-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#custom-logo{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+
+    background: url('loading_icon.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:200px;
+    height:200px;
+    text-align:center;
+}
+#loading-progress {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    color:white;
+    position: relative;
+    top: 110%;
+}
+#unity-container.unity-desktop { left: 50%; top: 50%; transform: translate(-50%, -50%) }
+#unity-container.unity-mobile { width: 100%; height: 100% }
+#unity-canvas { background: #000 }
+.unity-mobile #unity-canvas { width: 100%; height: 100% }
+#unity-footer { position: relative }
+.unity-mobile #unity-footer { display: none }
+#unity-webgl-logo { float:left; width: 204px; height: 38px; background: url('webgl-logo.png') no-repeat center }
+#unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
+#unity-fullscreen-button { float: right; width: 38px; height: 38px; background: url('fullscreen-button.png') no-repeat center }
+#unity-mobile-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
+.modal-container { background-color:rgba(0,0,0,0.3); display:flex;align-items:center; justify-content: center;  position: fixed; opacity:0; pointer-events:none; top:0; left:0; height:100vh; width: 100vw; transition: opacity 0.3s ease;}
+.modal {background-color: #fff; border-radius:5px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); padding:30px 50px; width:600px; max-width: 100%; text-align:center;}
+.modal-container.show{pointer-events:auto; opacity:1;}
+#demo-basic {
+  width: 250px;
+  height: 250px;
+  padding-bottom:50px;
+  margin: auto;
+}
